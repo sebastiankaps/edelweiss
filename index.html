@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edelweiss Viewer</title>
+  <meta name="color-scheme" content="light">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
+    :root {
+      color-scheme: light;
+    }
+
     html, body {
       margin: 0;
       width: 100%;
       height: 100%;
       background: transparent !important;
-      overflow: hidden;
-    }
-
-    body {
       background-color: transparent !important;
+      overflow: hidden;
     }
 
     .wrap {
@@ -48,9 +50,9 @@
       interaction-prompt="none"
       auto-rotate
       rotation-per-second="5deg"
-      camera-orbit="0deg 90deg 160%"
-      min-camera-orbit="auto auto 130%"
-      max-camera-orbit="auto auto 240%"
+      camera-orbit="0deg 90deg 145%"
+      min-camera-orbit="auto auto 120%"
+      max-camera-orbit="auto auto 220%"
       field-of-view="18deg"
       shadow-intensity="0"
       exposure="1.1"
